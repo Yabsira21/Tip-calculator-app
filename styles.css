@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.header {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 10px;
+  color: hsl(186, 14%, 43%);
+  text-transform: uppercase;
+}
+
+main {
+  transform: scale(1.11);
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  /* for splitter */
+  position: relative;
+  top: -150px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* for the dallar and person sign */
+
+.currencyinput {
+  /* border: 1px inset white; */
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+.currencyinput img {
+  height: 12px;
+}
+.currencyinput input {
+  border: 0;
+  justify-self: end;
+}
+
+.currencyinput:active {
+  border: 2px solid hsl(183, 100%, 15%);
+}
+
+.currencyinput input:focus {
+  outline: none;
+}
+
+.col input {
+  width: 220px;
+}
+
+section > div {
+  padding-bottom: 20px;
+}
+
+section:first-of-type > div:last-of-type {
+  padding-bottom: 0;
+}
+
+section:first-of-type {
+  /* width: 50%; */
+  margin: 30px 20px 30px 30px;
+}
+
+input {
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  height: 24px;
+  font-size: 24px;
+  width: 100px;
+  color: hsl(183, 100%, 15%);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: hsl(186, 14%, 43%);
+}
+
+.grd {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(2, 30px);
+  gap: 10px;
+}
+
+.grd button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+button:active,
+button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+.grd input {
+  text-align: center;
+  width: 80px;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.err {
+  display: flex;
+  justify-content: space-between;
+}
+
+#error {
+  color: red;
+}
+
+section:last-of-type {
+  background-color: hsl(183, 100%, 15%);
+  /* width: 90%; */
+  width: 300px;
+  margin: 20px 20px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px 10px 0px;
+}
+
+section:last-of-type > div {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section:last-of-type button {
+  width: 90%;
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  text-transform: uppercase;
+  margin-top: 55px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+section:last-of-type h2 {
+  font-size: 12px;
+  color: white;
+}
+
+section:last-of-type p {
+  font-size: 9px;
+  color: hsl(184, 14%, 56%);
+}
+
+section:last-of-type h1 {
+  font-size: 36px;
+  color: hsl(172, 67%, 45%);
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 110vh;
+  }
+  main {
+    flex-direction: column;
+    height: 900px;
+    width: 100%;
+    align-items: center;
+    /* for splitter */
+    position: static;
+  }
+
+  .grd {
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(3, 30px);
+  }
+
+  .grd input {
+    width: 120px;
+  }
+
+  section:last-of-type button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+/* js */
+/* .dark {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+} */

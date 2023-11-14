@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="header">
+      spli <br />
+      tter
+    </h1>
+    <main>
+      <section>
+        <div class="col">
+          <label for="bill">Bill</label>
+          <span class="currencyinput" id="b">
+            <img src="images/icon-dollar.svg" alt="" /><input
+              type="number"
+              id="bill"
+              placeholder="0"
+            />
+          </span>
+        </div>
+        <div>
+          <label for="">Select Tip %</label>
+          <div class="grd">
+            <button class="Tips" id="5%">5%</button>
+            <button class="Tips" id="10%">10%</button>
+            <button class="Tips" id="15%">15%</button>
+            <button class="Tips" id="25%">25%</button>
+            <button class="Tips" id="50%">50%</button>
+            <input type="text" placeholder="Custom" id="tipInput" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <span class="err">
+              <label for="people">Number of People</label>
+              <label for="" id="error"></label>
+            </span>
+          </div>
+          <span class="currencyinput" id="p">
+            <img src="images/icon-person.svg" alt="" /><input
+              type="number"
+              id="people"
+              placeholder="0"
+            />
+          </span>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <div><h1 id="Num-1">$0.00</h1></div>
+        </div>
+        <div>
+          <div>
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+          <div><h1 id="Num-2">$0.00</h1></div>
+        </div>
+        <button id="Reset">Reset</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
