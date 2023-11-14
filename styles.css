@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  transform: scale(1.11);
+  transform: scale(1.3);
   background-color: white;
   display: flex;
   border-radius: 20px;
